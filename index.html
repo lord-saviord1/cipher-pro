@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CIPHER for Change | MASSA-LASU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- 🏁 Hero Section -->
+  <section class="hero" data-aos="fade-down">
+    <h1>🔓 CIPHER for Change</h1>
+    <p>Unlocking Excellence in Public Relations at MASSA-LASU</p>
+    <a href="#votePoll" class="cta-button">Pledge Your Vote</a>
+    <a href="faces-of-massa.html" class="cta-button secondary">View Faces of MASSA</a>
+  </section>
+
+  <!-- 🏛️ Preamble -->
+  <section data-aos="fade-up">
+    <h2>🏛️ Preamble</h2>
+    <p>This is not just a campaign. It’s a call to decode student needs and amplify every voice.</p>
+  </section>
+
+  <!-- 🧭 Cipher Doctrine -->
+  <section class="doctrine-grid" data-aos="fade-up">
+    <article><h3>📖 Transparency</h3><p>No secrets. No silent cabinets. Just truth.</p></article>
+    <article><h3>🤝 Engagement</h3><p>Open ears, open doors, open arms.</p></article>
+    <article><h3>🧠 Storytelling</h3><p>Stories shape culture. We’ll shape ours boldly.</p></article>
+    <article><h3>🌍 Inclusivity</h3><p>No cliques. No echo chambers. Just a united voice.</p></article>
+    <article><h3>💡 Innovation</h3><p>PR isn’t yesterday’s memo. It’s tomorrow’s media.</p></article>
+    <article><h3>📊 Accountability</h3><p>If it isn’t tracked, it isn’t real.</p></article>
+  </section>
+
+  <!-- 🗳️ Poll Section -->
+  <section id="votePoll" data-aos="flip-up">
+    <h2>🗳️ Will you vote for Cipher?</h2>
+    <form id="voteForm" onsubmit="return handlePoll(event)">
+      <input type="text" name="matric" placeholder="Matric Number" required />
+      <input type="text" name="department" placeholder="Department" required />
+      <input type="text" name="level" placeholder="Level (e.g. 300L)" required />
+      <label><input type="radio" name="vote" value="yes" required /> Yes</label>
+      <label><input type="radio" name="vote" value="maybe" /> Maybe</label>
+      <label><input type="radio" name="vote" value="no" /> No</label>
+      <button type="submit" class="cta-button">Submit Vote</button>
+    </form>
+    <div id="pollResult" class="poll-result"></div>
+  </section>
+
+  <!-- 💬 WhatsApp Buttons -->
+  <a href="https://wa.me/2348147232337" class="whatsapp-btn message-btn" target="_blank">💬 Message Cipher</a>
+  <a href="https://chat.whatsapp.com/KNcNLvP7f3n5YUCkPgMUKj?mode=r_t" class="whatsapp-btn group-btn" target="_blank">📲 Join Group</a>
+
+  <!-- 👣 Footer -->
+  <footer>
+    <p>Daniel “Cipher” Savior Ozoemena | Matric No: 240822032</p>
+    <p>#CipherSpeaks • Build Trust, Amplify Your Voice</p>
+  </footer>
+
+  <!-- ⚙️ Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

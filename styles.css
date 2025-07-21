@@ -1,0 +1,120 @@
+:root {
+  --navy: #1A1F71;
+  --gold: #D4AF37;
+  --ivory: #FDFDFD;
+  --charcoal: #222;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--ivory);
+  color: var(--charcoal);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, var(--navy), #2E3A8C);
+  color: var(--ivory);
+  text-align: center;
+  padding: 60px 5%;
+}
+
+/* Buttons */
+.cta-button {
+  background-color: var(--gold);
+  color: var(--navy);
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px 5px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.secondary {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+}
+
+/* Content Sections */
+section {
+  padding: 40px 5%;
+}
+
+/* Grid for Doctrines */
+.doctrine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.doctrine-grid article {
+  background: #fff;
+  padding: 20px;
+  border-left: 6px solid var(--navy);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.doctrine-grid article:hover {
+  transform: scale(1.02);
+}
+
+/* Poll Styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.poll-result {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* WhatsApp Buttons */
+.whatsapp-btn {
+  position: fixed;
+  right: 15px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.message-btn { bottom: 90px; }
+.group-btn { bottom: 30px; }
+
+/* Footer */
+footer {
+  background-color: var(--navy);
+  color: var(--ivory);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+}
+
+/* Mobile Improvements */
+@media screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .cta-button {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  input, label, button {
+    font-size: 1rem;
+  }
+}
+s
